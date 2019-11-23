@@ -40,7 +40,7 @@ export default class CVATApplication extends React.PureComponent<CVATAppProps> {
     public componentDidUpdate() {
         if (this.props.gettingAuthError) {
             Modal.error({
-                title: 'Could not check authorization',
+                title: 'Could not check authorizations',
                 content: `${this.props.gettingAuthError}`,
             });
         }
